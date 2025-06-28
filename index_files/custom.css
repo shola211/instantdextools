@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    background: #0A0D1E;
+    color: var(--primary-color);
+    line-height: 1.6;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 0 0 20px;
+    font-family: var(--secondary-font);
+    letter-spacing: -0.5px;
+    opacity: 0.6;
+}
+
+body a,
+.link {
+    color: var(--link-color);
+    font-family: var(--secondary-font);
+}
+
+body a:hover,
+.link:hover {
+    color: var(--link-hover-color);
+}
+
+input,
+button,
+textarea {
+    font-family: var(--secondary-font);
+}
+
+.custom-btn,
+ul.main-menu li.header-menu-btn a {
+    height: 50px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: capitalize;
+    width: fit-content;
+    border-radius: 10px;
+    font-family: var(--secondary-font);
+}
+
+.primary-button {
+    color: var(--primary-button-color);
+    background: var(--primary-button-background-color);
+    border: 1px solid var(--primary-button-border-color);
+}
+
+.primary-button:hover {
+    color: var(--primary-button-hover-color);
+    background: var(--primary-button-hover-background-color);
+    border: 1px solid var(--primary-button-hover-border-color);
+}
+
+.secondary-button {
+    color: var(--secondary-button-color);
+    background: var(--secondary-button-background-color);
+    border: 1px solid var(--secondary-button-border-color);
+}
+
+.secondary-button:hover {
+    color: var(--secondary-button-color);
+    background: var(--secondary-button-hover-background_color);
+    border: 1px solid var(--secondary-button-hover-border-color);
+}
+
+.herder-menu ul#menu-primary-menu li a:before {
+    background: var(--link-hover-color);
+}
+
+.herder-menu ul#menu-primary-menu li.current_page_item a {
+    color: var(--link-hover-color);
+}
+
+.overlay {
+    background: #0A0D1E;
+}
+
+.button_container span {
+    background: var(--primary-color);
+}
+
+.overlay ul li a:after {
+    background: var(--link-hover-color);
+}
+
+select,
+input,
+textarea {
+    border: 1px solid var(--primary-color);
+}
+
+.custom-btn {
+    position: relative;
+}
+
+.primary-button.custom-btn:hover,
+ul.main-menu li.header-menu-btn:last-child .secondary-button.custom-btn {
+    border: 1px solid transparent;
+}
+
+ul.main-menu li.header-menu-btn:last-child .secondary-button.custom-btn:hover,
+.primary-button.custom-btn:hover {
+    border: 1px solid var(--secondary-button-border-color);
+    background: transparent;
+}
+
+ul.main-menu li.header-menu-btn:last-child .secondary-button.custom-btn::after,
+.primary-button.custom-btn::after,
+.secondary-button.custom-btn::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: linear-gradient(98.14deg, #0072CE 10.65%, #00D6BF 99.07%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    transition: all ease 0.4s;
+}
+
+ul.main-menu li.header-menu-btn:last-child .secondary-button.custom-btn::after {
+    opacity: 1;
+}
+
+ul.main-menu li.header-menu-btn:last-child .secondary-button.custom-btn:hover::after,
+.primary-button.custom-btn:hover::after {
+    opacity: 0;
+}
+
+.secondary-button.custom-btn::after {
+    opacity: 0;
+}
+
+.secondary-button.custom-btn:hover::after {
+    opacity: 1;
+}
+
+.secondary-button.custom-btn:hover {
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.scroll-down-btn a.scroll-down {
+    font-family: var(--primary-font);
+}
+
+.dark-btn {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.dark-btn:hover {
+    background: var(--secondary-color);
+}
+
+.two-col-content h2,
+.two-col-content p {
+    color: var(--secondary-color);
+}
+
+h3.sub-heding {
+    font-family: var(--secondary-font);
+}
+
+.accordionjs .acc_section .ant-collapse-header,
+.item.client-reviews-wrapper p {
+    font-family: var(--primary-font);
+}
+
+.heading-active-slider-content-container h3 {
+    font-family: var(--secondary-font);
+}
+
+.blog-detail-section h1,
+.blog-detail-section h2,
+.blog-detail-section h3,
+.blog-detail-section h4,
+.blog-detail-section h5,
+.blog-detail-section h6,
+.blog-detail-section p,
+.blog-detail-section li,
+.blog-detail-section span,
+.blog-detail-section a {
+    color: var(--secondary-color);
+}

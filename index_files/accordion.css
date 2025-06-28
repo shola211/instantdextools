@@ -1,0 +1,131 @@
+/* ACCORDIAN */
+
+.accordionjs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.accordionjs .acc_section {
+    position: relative;
+    margin-top: -1px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+    border: 1px solid #D9D9D91A;
+}
+
+.accordionjs .acc_section .acc_head {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.accordionjs .acc_section .acc_head h3 {
+    line-height: 1;
+    margin: 5px 0;
+}
+
+.accordionjs .acc_section.acc_active>.acc_content {
+    display: block;
+}
+
+.accordionjs .acc_section .acc_head {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+}
+
+li.acc_section.acc_active .ant-collapse-header.acc_head {
+    background: -webkit-linear-gradient(61deg, #0072CE 0%, #00D6BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accordionjs .acc_section {
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+.accordionjs .acc_section .ant-collapse-header {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+}
+
+.accordionjs .acc_section .ant-collapse-header span {
+    max-width: 90%;
+}
+
+.faq-down-arrow {
+    max-width: 17px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.acc_section.acc_active .faq-down-arrow {
+    transform: rotate(180deg) !important;
+}
+
+.acc_section.acc_active .faq-down-arrow path {
+    stroke: url(#paint0_linear_448_373);
+}
+
+.ant-collapse-content {
+    overflow: hidden;
+    padding-top: 35px;
+}
+
+.custom-cms-content p,
+.custom-cms-content li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.36px;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+.custom-cms-content a {
+    text-decoration: underline;
+}
+
+.custom-cms-content a:hover {
+    background: -webkit-linear-gradient(61deg, #0072CE 0%, #00D6BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-faq-content {
+    padding-top: 60px;
+}
+
+.custom-pc-faq h2.faq-heading,
+.custom-pc-faq .sub-heding {
+    text-align: center;
+}
+
+h2.faq-heading {
+    margin: 0;
+}
+
+.custom-row-content h2 {
+    margin: 0;
+}
+
+/* END ACCORDIAN */
